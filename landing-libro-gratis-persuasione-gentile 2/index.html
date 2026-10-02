@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Persuasione Gentile in regalo</title>
+<meta name="description" content="Richiedi la tua copia gratuita di Persuasione Gentile per Chi Viene Sottovalutato di Irene Castellucci, con 3 regali esclusivi.">
+<meta property="og:title" content="Richiedi la tua copia GRATUITA di: Persuasione Gentile per Chi Viene Sottovalutato">
+<meta property="og:image" content="copertina.jpg">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Lora:ital,wght@0,400;0,600;1,400&family=Work+Sans:wght@500;600;700&display=swap">
+<style>
+/* Layout: colonna unica centrata come la pagina di riferimento (titolo, copertina, passi, regali, call to action).
+   Palette della copertina v2: blu notte, corallo, crema, oro. Tema unico, scuro per scelta. */
+:root{
+  --notte:#14213D;
+  --notte-2:#1C2B4D;
+  --linea:#33476F;
+  --crema:#FFF4E6;
+  --crema-2:#C9CFDB;
+  --crema-3:#8F9BB4;
+  --corallo:#FF6B4A;
+  --corallo-scuro:#E2512F;
+  --oro:#F4B942;
+  --f-display:"DM Serif Display", Georgia, "Times New Roman", serif;
+  --f-testo:"Lora", Georgia, "Times New Roman", serif;
+  --f-ui:"Work Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  color-scheme:dark;
+}
+[hidden]{display:none!important}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--notte);color:var(--crema);font:400 1.0625rem/1.6 var(--f-testo);padding-inline:16px;padding-block:max(32px, env(safe-area-inset-top)) max(40px, env(safe-area-inset-bottom));-webkit-font-smoothing:antialiased;text-align:center}
+main{max-width:760px;margin:0 auto}
+img{max-width:100%;height:auto;display:block}
+h1,h2,h3{text-wrap:balance}
+h1{font:400 clamp(2rem,5.4vw,3.1rem)/1.1 var(--f-display);margin:0 0 28px}
+h1 b{font-weight:400;color:var(--corallo)}
+h1 i{font-style:normal;display:block;color:var(--crema)}
+h2{font:400 clamp(1.6rem,4vw,2.2rem)/1.15 var(--f-display);margin:0 0 18px}
+.copertina{width:min(280px,72%);margin:0 auto 36px;border-radius:3px;box-shadow:0 26px 50px rgba(0,0,0,.5),0 0 90px rgba(255,107,74,.28)}
+
+.passi{list-style:none;counter-reset:p;margin:0 auto;padding:0;max-width:520px;display:grid;gap:14px;text-align:left}
+.passi li{counter-increment:p;display:grid;grid-template-columns:auto minmax(0,1fr);gap:14px;align-items:center;background:var(--notte-2);border:1px solid var(--linea);border-radius:14px;padding:14px 16px;font-size:1.05rem}
+.passi li::before{content:counter(p);width:36px;height:36px;border-radius:50%;display:grid;place-items:center;background:var(--corallo);color:var(--notte);font:700 1rem/1 var(--f-ui)}
+
+.regali{margin:44px auto 0;max-width:600px}
+.regali p{margin:0 0 8px}
+.grande{font:400 clamp(1.3rem,3.4vw,1.7rem)/1.3 var(--f-display)}
+.grande b{font-weight:400;color:var(--oro)}
+.grazie{color:var(--crema-2);font-style:italic}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;font:700 1.02rem/1.2 var(--f-ui);border-radius:999px;padding:17px 28px;min-height:54px;transition:filter .15s, transform .15s}
+.btn:hover{filter:brightness(1.07)}
+.btn:active{transform:translateY(1px)}
+.btn:focus-visible{outline:2px solid var(--oro);outline-offset:3px}
+.btn-recensione{background:var(--crema);color:var(--notte)}
+.btn-libro{background:var(--corallo);color:var(--notte);font-size:1.12rem;padding:20px 34px}
+.btn-bonus{color:var(--crema);box-shadow:inset 0 0 0 1px var(--crema-3)}
+.spazio{margin-top:22px}
+
+.bonus{margin-top:64px;display:grid;gap:16px;text-align:left}
+.bonus article{background:var(--notte-2);border:1px solid var(--linea);border-radius:16px;padding:22px 22px 20px}
+.bonus .tag{font:700 .78rem/1 var(--f-ui);letter-spacing:.12em;color:var(--oro);margin:0 0 8px}
+.bonus h3{font:400 1.45rem/1.2 var(--f-display);margin:0 0 8px}
+.bonus p{margin:0;color:var(--crema-2)}
+
+.cta{margin-top:64px;padding:34px 22px;border-radius:22px;background:linear-gradient(160deg,var(--notte-2),#0E1830);border:1px solid var(--linea)}
+.limitata{display:inline-block;font:700 .9rem/1 var(--f-ui);letter-spacing:.12em;color:var(--notte);background:var(--oro);padding:10px 16px;border-radius:6px;margin:0 0 18px}
+.passo{max-width:560px;margin:26px auto 0;text-align:left}
+.passo h3{font:700 .85rem/1 var(--f-ui);letter-spacing:.14em;color:var(--corallo);margin:0 0 8px}
+.passo p{margin:0 0 14px}
+.passo ul{margin:10px 0 0;padding-left:1.2em;color:var(--crema-2)}
+.passo .centro{text-align:center}
+.nota{color:var(--crema-2);font-size:.95rem;margin:30px auto 14px;max-width:520px}
+
+footer{max-width:760px;margin:56px auto 0;border-top:1px solid var(--linea);padding-top:18px;font:500 .8rem/1.6 var(--f-ui);color:var(--crema-3)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<main>
+  <h1>Richiedi la tua copia <b>GRATUITA</b> di: <i>Persuasione Gentile per Chi Viene Sottovalutato</i></h1>
+  <img class="copertina" src="copertina.jpg" width="520" height="780" alt="Copertina di Persuasione Gentile per Chi Viene Sottovalutato di Irene Castellucci">
+
+  <h2>Come ottenere il tuo libro GRATIS:</h2>
+  <ol class="passi">
+    <li>Scarica il tuo libro con il pulsante in fondo alla pagina</li>
+    <li>Leggilo con calma e mettilo alla prova nelle tue conversazioni</li>
+    <li>Se ti va, scrivi una recensione sincera su Amazon</li>
+  </ol>
+
+  <section class="regali">
+    <p class="grande">Ma non è tutto… Insieme al libro ricevi anche <b>3 REGALI Esclusivi GRATIS</b> 🎁</p>
+    <p class="grazie">Un sentito grazie per far parte di questo viaggio.</p>
+    <a class="btn btn-recensione spazio link-recensione" href="#" target="_blank" rel="noopener" hidden>Lascia una recensione su Amazon</a>
+  </section>
+
+  <section class="bonus" aria-label="I 3 regali">
+    <article>
+      <p class="tag">BONUS #1</p>
+      <h3>Il kit anti-blocco</h3>
+      <p>Dodici schede con le frasi pronte del libro e dodici sfondi per il telefono. Quando lì per lì non ti viene niente, ti bastano dieci secondi per ripassare quella giusta.</p>
+    </article>
+    <article>
+      <p class="tag">BONUS #2</p>
+      <h3>Il preparatore di conversazioni difficili</h3>
+      <p>Sette passi. Quindici minuti. La richiesta al capo, il no a un parente, l'aumento: ci arrivi con una mappa, invece di improvvisare proprio quando ti blocchi.</p>
+    </article>
+    <article>
+      <p class="tag">BONUS #3</p>
+      <h3>Il diario dei 30 giorni</h3>
+      <p>Una piccola sfida al giorno. Cinque minuti la sera per scrivere com'è andata. Scoprirai che le reazioni vere degli altri sono quasi sempre più tranquille di quelle che temevi.</p>
+    </article>
+  </section>
+
+  <section class="cta" aria-labelledby="t-cta">
+    <p class="limitata">OFFERTA LIMITATA!</p>
+    <h2 id="t-cta">Ecco come puoi ricevere il libro e i tuoi regali esclusivi:</h2>
+
+    <div class="passo">
+      <h3>PASSO 1</h3>
+      <p>Scarica <i>Persuasione Gentile per Chi Viene Sottovalutato</i> con il pulsante qui sotto. Insieme al libro trovi subito anche i tuoi regali:</p>
+      <ul>
+        <li>Il kit anti-blocco</li>
+        <li>Il preparatore di conversazioni difficili</li>
+        <li>Il diario dei 30 giorni</li>
+      </ul>
+    </div>
+
+    <div class="passo">
+      <h3>PASSO 2</h3>
+      <p>Quando l'hai letto, se ti va, scrivi una recensione sincera su Amazon: positiva o critica, ogni opinione onesta aiuta altri lettori a scegliere.</p>
+      <p class="centro"><a class="btn btn-recensione link-recensione" href="#" target="_blank" rel="noopener" hidden>Lascia una recensione su Amazon</a></p>
+    </div>
+
+    <p class="nota">Il libro e i regali sono tuoi in ogni caso: clicca qui sotto per scaricare il tuo libro.</p>
+    <a class="btn btn-libro" id="link-libro" href="#" target="_blank" rel="noopener">Scarica il tuo libro</a>
+    <p class="spazio"><a class="btn btn-bonus" id="link-bonus" href="#" target="_blank" rel="noopener" hidden>Apri i tuoi regali</a></p>
+  </section>
+</main>
+
+<footer>
+  Persuasione Gentile per Chi Viene Sottovalutato — Irene Castellucci<br>
+  Questa pagina non è affiliata né sponsorizzata da Amazon.
+</footer>
+
+<script>
+/* ====================== DA COMPILARE ======================
+   LINK_LIBRO: link per scaricare il libro (es. il PDF su Google Drive, condiviso come Visualizzatore).
+   LINK_REGALI: indirizzo della web app con i 3 bonus (lascia '' per nasconderne il pulsante).
+   ASIN_LIBRO: ASIN di Persuasione Gentile su Amazon.it, quando è pubblicato (es. 'B0XXXXXXXX').
+               Finché è vuoto, i pulsanti della recensione non compaiono. */
+var LINK_LIBRO  = '';
+var LINK_REGALI = '';
+var ASIN_LIBRO  = '';
+/* ========================================================== */
+(function(){
+  var libro = document.getElementById('link-libro');
+  if (/^https:\/\//.test(LINK_LIBRO)) libro.href = LINK_LIBRO;
+  else libro.addEventListener('click', function(e){ e.preventDefault(); libro.textContent = 'Link del libro in arrivo'; });
+  if (/^https:\/\//.test(LINK_REGALI)) { var b = document.getElementById('link-bonus'); b.href = LINK_REGALI; b.hidden = false; }
+  if (/^[A-Z0-9]{10}$/.test(ASIN_LIBRO)) {
+    document.querySelectorAll('.link-recensione').forEach(function(a){
+      a.href = 'https://www.amazon.it/review/create-review/?asin=' + ASIN_LIBRO; a.hidden = false;
+    });
+  }
+})();
+</script>
+</body>
+</html>
